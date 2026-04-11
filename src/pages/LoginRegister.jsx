@@ -25,6 +25,7 @@ function LoginRegister({ register }) {
             try {
                 const result = await registerUserAPI(formData)
                 console.log(result.data)
+                result.status==200 && navigate('/login')
             } catch (error) {
                 console.log(error);
             }
@@ -35,6 +36,7 @@ function LoginRegister({ register }) {
                     const { existingUser, token } = result.data
                     localStorage.setItem("existingUser", JSON.stringify(existingUser))
                     localStorage.setItem("token", token)
+                    result.status==200 && navigate('/')
                 }
             } catch (error) {
                 console.log(error);
