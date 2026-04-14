@@ -99,7 +99,7 @@ function Settings() {
       </div>
 
       {/* CALORIE CARD */}
-      <div className="bg-gradient-to-r from-[#90c21d]/20 to-[#90c21d]/5 border border-[#90c21d]/30 p-6 rounded-2xl shadow-md">
+      <div className="bg-linear-to-r from-[#90c21d]/20 to-[#90c21d]/5 border border-[#90c21d]/30 p-6 rounded-2xl shadow-md">
 
         <p className="text-white/60 text-sm mb-1">Daily Calorie Target</p>
         <p className="text-3xl font-semibold text-[#90c21d]">
