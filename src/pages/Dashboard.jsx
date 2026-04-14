@@ -7,6 +7,7 @@ import FoodLog from '../components/FoodLog'
 import { Menu } from 'lucide-react'
 import { useEffect } from 'react'
 import AITrainer from '../components/AITrainer'
+import Settings from '../components/Settings'
 
 function Dashboard() {
 
@@ -26,7 +27,7 @@ function Dashboard() {
       case 'trainer':
         return <AITrainer />
       case 'settings':
-        return <div>Settings</div>
+        return <Settings />
       default:
         return <div>Not Found</div>
     }

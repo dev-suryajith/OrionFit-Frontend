@@ -22,7 +22,7 @@ function DashboardTab() {
   }
   const fetchData = async () => {
     try {
-      const foodRes = await getFoodAPI(existingUser._id, reqHeader)
+      const foodRes = await getFoodAPI(existingUser._id)
       const waterRes = await getWaterLogAPI(reqHeader)
       const workoutRes = await fetchWorkoutLogAPI(reqHeader)
       console.log(foodRes.data);

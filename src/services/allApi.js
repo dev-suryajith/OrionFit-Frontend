@@ -37,8 +37,8 @@ export const addFoodAPI = async (reqBody, reqHeader) => {
     return await commonAPI("POST", `${serverURL}/add-food`, reqBody, reqHeader)
 }
 
-export const getFoodAPI = async (userId,reqHeader) => {
-    return await commonAPI("GET", `${serverURL}/get-food/${userId}`, {}, reqHeader)
+export const getFoodAPI = async (userId) => {
+    return await commonAPI("GET", `${serverURL}/get-food/${userId}`,)
 }
 
 export const deleteFoodAPI = async (reqBody) => {
